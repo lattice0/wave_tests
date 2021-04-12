@@ -4,12 +4,11 @@ project (wave_tests)
 set (wave_tests_VERSION_MAJOR 1)
 set (wave_tests_VERSION_MINOR 0)
 
+set(wave_enable_tests OFF)
 add_subdirectory(wave)
 
-add_library (wave_tests main.cpp)
+add_executable(main main.cpp)
+target_link_libraries (main wave)
+target_include_directories(main PUBLIC wave/src/wave)
 
-add_executable(wave_tests wave_tests main.cpp)
-
-target_link_libraries (wave_tests wave_tests)
-
-install (TARGETS wave_tests DESTINATION bin)
+#install (TARGETS wave_tests DESTINATION bin)

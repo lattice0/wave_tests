@@ -8,3 +8,7 @@ CMakeHelloWorld
 *.a
 **/*.a
 build/**
+wave/CMakeFiles/*
+wave/src/CMakeFiles/*
+Makefile
+test_resource/*
