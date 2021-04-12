@@ -1,0 +1,14 @@
+build/
+.DS_STORE
+.vscode
+CMakeFiles/*
+*.cmake
+src/wave/CMakeFiles/*
+*.a
+src/CMakeFiles/*
+external_googletest-prefix/*
+src/Makefile
+src/wave/Makefile
+test_resource/*
+Makefile
+DartConfiguration.tcl
